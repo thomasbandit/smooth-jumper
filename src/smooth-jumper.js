@@ -1,11 +1,3 @@
-// SMOOTH JUMPER v0.1
-
-// - make git
-// - setup examples on github static pages?
-// - test cross browser (ie) + on mobile
-// - make npm module
-// - make SSR friendly?
-
 import raf from 'raf';
 import {easeInCubic, easeInOutQuint, easeInOutQuad} from './helpers/easing';
 
@@ -53,7 +45,6 @@ const calculateEasingValue = function(method, currentTime, start, change, durati
   return val;
 }
 
-// export default function scrollToElement(container, to, duration = 500, options = {}) {
 const smoothJumper = function(container, to, duration = 500, options = {}) {
   // Setup the initial calculation values
   let currentTime = 0;
@@ -85,5 +76,4 @@ const smoothJumper = function(container, to, duration = 500, options = {}) {
   smoothScroll();
 }
 
-// export default scrollToElement;
 module.exports = smoothJumper;

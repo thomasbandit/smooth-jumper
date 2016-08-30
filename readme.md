@@ -4,8 +4,8 @@ A simple dependency-free JavaScript smooth scroll helper. Enables scrolling betw
 
 ## Demos
 
-[Vanilla JS](https://thomasbandit.github.io/smooth-jumper/examples) - Performs a smooth scroll example on the document.body.
-[React](https://thomasbandit.github.io/smooth-jumper/examples/react.html) - Performs a smooth scroll between three elements within an absolute element of fixed height.
+* [Vanilla JS](https://thomasbandit.github.io/smooth-jumper/examples) - Performs a smooth scroll example on the document.body.
+* [React](https://thomasbandit.github.io/smooth-jumper/examples/react.html) - Performs a smooth scroll between three elements within an absolute element of fixed height.
 
 ## Building, useful commands
 
