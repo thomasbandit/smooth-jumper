@@ -1,0 +1,29 @@
+.container__static {
+  color: #CACACA;
+
+  h1 {
+    margin: 400px 30px 20px;
+  }
+
+  a, a:visited, a:active {
+    color: #CACACA;
+  }
+
+  .break {
+    height: 900px;
+    background-image: linear-gradient(#666, #000);
+  }
+
+  .end {
+    background-color: #000;
+
+    h2 {
+      margin: 0 30px;
+      padding: 20px 0;
+
+      &:first-of-type {
+        margin-bottom: 700px;
+      }
+    }
+  }
+}

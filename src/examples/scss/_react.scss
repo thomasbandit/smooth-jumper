@@ -1,0 +1,44 @@
+.container__react {
+  height: 100%;
+  color: #DADADA;
+  font-size: 2em;
+  background: #CACACA;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 12px solid #dadada;
+  }
+
+  a {
+    &, &:visited {
+      color: #CACACA;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .container__inner {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    padding: 15px 25px;
+    overflow: scroll;
+    background: #FFF;
+
+    @media (min-width: 768px) {
+      top: 200px;
+      right: 200px;
+      bottom: 200px;
+      left: 200px;
+      padding: 30px 50px;
+    }
+  }
+}
