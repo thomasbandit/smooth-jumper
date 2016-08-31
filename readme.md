@@ -4,12 +4,16 @@ A simple dependency-free JavaScript smooth scroll helper. Enables scrolling betw
 
 ## Demos
 
-* [Vanilla JS](https://thomasbandit.github.io/smooth-jumper/examples) - Performs a smooth scroll example on the document.body.
-* [React](https://thomasbandit.github.io/smooth-jumper/examples/react.html) - Performs a smooth scroll between three elements within an absolute element of fixed height.
+* [Vanilla JS](https://thomasbandit.github.io/smooth-jumper/examples/static.html) - Performs a smooth scroll example on the document.body.
+* [React](https://thomasbandit.github.io/smooth-jumper/examples/index.html) - Performs a smooth scroll between three elements within an absolute element of fixed height.
 
 ## Using
-* Via [NPM](https://www.npmjs.com/package/smooth-jumper): `npm install smooth-jumper --save`
-* Or use the `dist/smooth-jumper.js` file as an external script.
+* Via [NPM](https://www.npmjs.com/package/smooth-jumper): `npm install smooth-jumper --save`.
+
+* Or use the `lib/smooth-jumper.min.js` file as an external script. Usage:
+
+  `smoothJump(containerEl, targetEl, options = {});`
+
 * Exports a single function with 3 arguments:
   1. The DOM container element
   2. The DOM target element
@@ -24,8 +28,9 @@ A simple dependency-free JavaScript smooth scroll helper. Enables scrolling betw
 ## Building, useful commands
 
 * `npm run dev` - Entry route is `src/examples/index.js`. This loads the React app with Hot Module Replacement (hot reloading).
-* `npm run examples` - Builds the static JavaScript and SCSS files. The following files are created in the * `examples` directory: `bundle.js` and `style.css`.
-* `npm run build` - Builds the production version smooth-jumper.js in the `dist` directory.
+* `npm run build` - Builds the NPM production version smooth-jumper.js in the `lib` directory.
+* `npm run build:min` - Builds the minified production version smooth-jumper.min.js in the `lib` directory.
+* `npm run build:examples` - Builds the static JavaScript and SCSS files. The following files are created in the * `examples` directory: `bundle.js` and `style.css`.
 * `npm run lint` - Runs an ES lint to check everything's nice and tidy.
 
 ### License

@@ -7,12 +7,12 @@ var config = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/examples/react-index.js'
+    './src/examples/index.js'
   ],
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, '../examples'),
     filename: 'bundle.js',
-    publicPath: '/build/'
+    publicPath: '/'
   },
   module: {
     loaders: [

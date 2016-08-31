@@ -1,12 +1,13 @@
 {
   "name": "smooth-jumper",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Enable smooth scrolling with and within DOM elements",
-  "main": "src/smooth-jumper.js",
+  "main": "lib/smooth-jumper.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p --config webpack/prod.config.js",
+    "build": "cross-env webpack --config webpack/prod.config.js",
+    "build:min": "cross-env NODE_ENV=production webpack -p --config webpack/prod.config.js",
+    "build:examples": "webpack --config webpack/examples-prod.config.js",
     "dev": "node server.js",
-    "examples": "webpack -p --config webpack/examples-prod.config.js",
     "lint": "eslint src"
   },
   "repository" :

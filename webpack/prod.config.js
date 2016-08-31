@@ -5,8 +5,8 @@ var WebpackNotifierPlugin = require('webpack-notifier');
 var config = {
   entry: './src/smooth-jumper',
   output: {
-    path: path.join(__dirname, '../dist'),
-    filename: 'smooth-jumper.js',
+    path: path.join(__dirname, '../lib'),
+    filename: process.env.NODE_ENV === 'production' ? 'smooth-jumper.min.js' : 'smooth-jumper.js',
     libraryTarget: 'umd',
     library: 'smoothJump'
   },

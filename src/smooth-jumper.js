@@ -53,7 +53,6 @@ const smoothJumper = function(container, to, duration = 500, options = {}) {
   const start = container.scrollTop;
   const offset = options.hasOwnProperty('offset') ? parseFloat(options.offset) : 0;
   const easing = options.hasOwnProperty('easing') ? getEasingType(options.easing) : 'ease-in-out';
-
   let target = to.getBoundingClientRect().top + container.scrollTop;
 
   // Account for external styles and offset

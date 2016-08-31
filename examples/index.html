@@ -3,34 +3,11 @@
     <meta charset="utf-8">
     <title>A Simple React, SCSS & Webpack example</title>
 
-    <link rel="stylesheet" href="../examples/style.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container__static">
-      <h1 id="start">Hello. <a href="#">Click here to scroll down</a>.</h1>
+    <div id="app"></div>
 
-      <div class="break"></div>
-
-      <div class="end">
-        <h2 id="end">Goodbye. <a href="#">Click here to scroll back to the start</a>.</h2>
-
-        <h2>The end</h2>
-      </div>
-    </div>
-
-    <script src="./bundle.js"></script>
-    <script>
-      var startDiv = document.getElementById('start');
-      var endDiv = document.getElementById('end');
-
-      startDiv.addEventListener('click', function(e) {
-        smoothJump(document.body, endDiv);
-      }, false);
-
-      endDiv.addEventListener('click', function(e) {
-        smoothJump(document.body, startDiv);
-      }, false);
-    </script>
-
+    <script src="bundle.js"></script>
   </body>
 </html>
