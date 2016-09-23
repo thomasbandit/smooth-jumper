@@ -21,9 +21,9 @@ A simple dependency-free JavaScript smooth scroll helper. Enables scrolling betw
 
 ## Options
 
-* Easing types: `ease-in-out`, `ease-in-cubic`, `in-out-quint`
-* Duration: Integer (in milliseconds; default is 500ms)
-* Offset: Integer (in pixels; default is 0)
+* 'easing' for easing types: `ease-in-out`, `ease-in-cubic`, `in-out-quint`
+* 'duration': Integer (in milliseconds; default is 500ms)
+* 'offset': Integer (in pixels; default is 0)
 
 ## Building, useful commands
 

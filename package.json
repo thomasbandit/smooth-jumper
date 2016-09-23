@@ -1,6 +1,6 @@
 {
   "name": "smooth-jumper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Enable smooth scrolling with and within DOM elements",
   "main": "lib/smooth-jumper.js",
   "scripts": {

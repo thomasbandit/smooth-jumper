@@ -45,11 +45,12 @@ const calculateEasingValue = function(method, currentTime, start, change, durati
   return val;
 }
 
-const smoothJumper = function(container, to, duration = 500, options = {}) {
+const smoothJumper = function(container, to, options = {}) {
   // Setup the initial calculation values
   let currentTime = 0;
   const increment = 20;
 
+  const duration = options.hasOwnProperty('duration') ? parseFloat(duration) : 500;
   const start = container.scrollTop;
   const offset = options.hasOwnProperty('offset') ? parseFloat(options.offset) : 0;
   const easing = options.hasOwnProperty('easing') ? getEasingType(options.easing) : 'ease-in-out';
@@ -64,7 +65,7 @@ const smoothJumper = function(container, to, duration = 500, options = {}) {
     currentTime += increment;
 
     // Update the scroll position
-    container.scrollTop = calculateEasingValue(easing, currentTime, start, change, duration);
+    container.scrollTop = calculateEasingValue(easing, parseFloat(currentTime), parseFloat(start), parseFloat(change), parseFloat(duration));
 
     // Execute the animation if duration hasn't passed
     if (currentTime < duration) {
